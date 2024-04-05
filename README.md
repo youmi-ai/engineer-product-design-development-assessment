@@ -1,7 +1,24 @@
 代码实现题目:
 1. (客服聊天界面) 实现一个客服聊天界面的React Native组件,包含消息列表、输入框和常用快捷回复。消息列表应该支持文本、图片、文件等类型,并能够显示时间戳。输入框应该支持文本输入、表情选择和图片/文件上传。
 2. (保险产品卡片) 实现一个保险产品卡片的React Native组件,用于在聊天界面中展示保险产品的关键信息,如保险名称、保障范围、保费等。卡片应该支持折叠和展开,以及点击跳转到详情页面。
-3. 实现一个React Native模块,用于在Android和iOS平台上获取设备的位置信息。模块应该提供一个JavaScript接口,允许React Native应用请求一次性位置更新或连续位置更新。模块需要处理权限请求和异常情况。
+3. (算法题)实现一个函数,用于在客户聊天记录中搜索包含指定关键词的消息。聊天记录以字符串数组的形式给出,每个元素代表一条消息。函数应该返回所有包含关键词的消息在原数组中的下标。请不要直接使用正则表达式,而是尝试使用其他字符串搜索算法。并分析时间和空间复杂度
+```javascript
+const messages = [
+  "Hello, how can I help you today?",
+  "I'm interested in buying a health insurance plan.",
+  "Great! We offer several health insurance options.",
+  "Could you provide more details about your available plans?",
+  "Sure, we have basic, standard, and premium health insurance plans.",
+];
+
+function searchMessages(messages, keyword) {
+  // 实现代码,不使用正则表达式
+}
+
+console.log(searchMessages(messages, "health")); // 输出 [2, 4]
+console.log(searchMessages(messages, "insurance")); // 输出 [1, 2, 4]
+```
+   
 
 产品设计题目:
 1. (保险方案推荐) 设计一个基于客户信息和需求的保险方案推荐功能,在客服聊天过程中自动提供个性化的保险产品组合。请考虑如何收集和分析客户信息,以及如何在聊天界面中自然地展示推荐结果。
